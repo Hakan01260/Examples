@@ -1,0 +1,28 @@
+package examples;
+
+import java.util.Scanner;
+
+public class UcgenAlanBulma {
+
+	public static void main(String[] args) {
+
+		int a, b, c;
+		double u, alan;
+
+		Scanner scan = new Scanner(System.in);
+
+		System.out.print("1. Kenarý Giriniz :");
+		a = scan.nextInt();
+
+		System.out.print("2. Kenarý Giriniz :");
+		b = scan.nextInt();
+
+		System.out.print("3. Kenarý Giriniz :");
+		c = scan.nextInt();
+
+		u = (a + b + c) / 2;
+
+		alan = Math.sqrt(u * (u - a) * (u - b) * (u - c));
+		System.out.println(alan);
+	}
+}
